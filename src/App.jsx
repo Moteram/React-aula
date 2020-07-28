@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 
 import Primeiro from './components/basicos/Primeiro';
-//import Comparametro from './components/basicos/Comparemetro';
+import Comparametro from './components/basicos/Comparemetro';
 import Com_Filhos from './components/basicos/Comfilhos';
 import Card from './components/layout/card';
 import Repeticoa from './components/basicos/Repeticao';
@@ -13,6 +13,11 @@ function App(props){
   return(
 
     <div className="app">
+      <Card titulo="#06 com parametros" color="#008">
+
+        <Comparametro Titulo="teste" subtitulo="testado"/>
+
+      </Card>
 
     <Card titulo="#05 - Componente com condicional v1" color="#FA6900">
 
