@@ -2,14 +2,16 @@ import React from 'react';
 
 import Filho from './filho';
 
-function Pai(){
+function Pai(externo){
 
   return(
     <div>
 
-    <Filho sobreNome="Moreira" />
-    <Filho sobreNome="Moreira" />
-    <Filho sobreNome="Moreira" />
+    <Filho {...externo}><b>João</b></Filho>
+
+    <Filho sobreNome={externo.sobreNome}>Maria</Filho>
+
+    <Filho sobreNome="sales">Pedro</Filho>
 
     </div>
 

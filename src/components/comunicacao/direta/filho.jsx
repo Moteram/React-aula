@@ -5,8 +5,7 @@ function Filho(fromPai){
   return (
 
     <div>
-      <h3>Componente filho</h3>
-      <h4>{fromPai.children} - { fromPai.sobreNome }</h4>
+      <p>{fromPai.children} - { fromPai.sobreNome }</p>
     </div>
 
   );
